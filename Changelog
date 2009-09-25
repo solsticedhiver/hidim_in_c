@@ -1,0 +1,17 @@
+0.1.3.1	fix some tiny bugs
+	* do not segfault on file without extension
+	* allow the use of extension of any case type
+
+0.1.3	add more command line option
+	* -v, -vv: to change verbosity of output
+	* -f: to force overwrite of existing files
+	* -s: to disable the addition of a comment field in the hidim (png)
+
+0.1.2 	bug fix: encode function
+	for some data and some value of line length, hidim produced was incorrect
+
+0.1.1	use getopt to parse command-line option
+	* to change line length of hidim
+	* to remove border and hidim logo
+
+0.1	initial release
