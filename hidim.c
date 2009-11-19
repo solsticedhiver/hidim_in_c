@@ -446,7 +446,7 @@ char *create_metadata(unsigned int *length, int line_length, const char* torrent
 }
 
 /* fill row_pointers with the metadata and the torrent */
-int agregate_data(png_bytep *row_pointers, png_uint_32 height, png_uint_32 width,
+int aggregate_data(png_bytep *row_pointers, png_uint_32 height, png_uint_32 width,
        int line_length, unsigned int length, const char *metadata, const char *torrent) {
     FILE *fp;
     int column = 0, row = line_length - 1, m = strlen(metadata)/3;
@@ -616,7 +616,7 @@ png_bytep *add_banner(png_bytep *row_pointers, png_uint_32 *width, png_uint_32 *
     return row_pointers;
 }
 
-/* encode the torrent into a hidim with line_length  and write the png file */
+/* encode the torrent into a hidim with line_length and write the png to file */
 int encode(const char* torrent, int line_length) {
     char *metadata;
     unsigned int length;

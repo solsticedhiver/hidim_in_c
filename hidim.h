@@ -88,7 +88,7 @@ int read_metadata(png_bytep *transpose, int start_row, int start_column,
         unsigned int *metadata_length, unsigned int *length);
 char *create_metadata(unsigned int *length, int line_length,
         const char *torrentfilename);
-int agregate_data(png_bytep *row_pointers, png_uint_32 height, png_uint_32 width,
+int aggregate_data(png_bytep *row_pointers, png_uint_32 height, png_uint_32 width,
         int line_length, unsigned int length, const char *metadata,
         const char *torrentfilename);
 int write_png(png_bytep *row_pointers, png_uint_32 width, png_uint_32 height,
